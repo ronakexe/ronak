@@ -34,6 +34,8 @@ img {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 33, 33, 33%;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .contact {
@@ -41,7 +43,7 @@ img {
   background: rgba(255, 255, 255, .2);
   border: 2px solid rgba(255, 255, 255, .3);
   border-radius: 15px;
-  width: 100px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,5 +51,10 @@ img {
 
 .icons {
   width: 20px;
-  padding-right: 10px;;
+  padding-right: 20px;
+
+}
+
+#replit {
+  filter: hue-rotate(360deg);
 }
