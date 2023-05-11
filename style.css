@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url(cursor.png), pointer;
+  background: url("ohmygod.png");
+  background-size: 100vmax;
+  font-family: "Inter";
+  color: white;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, .3);
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 15px;
+  height: 320px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
