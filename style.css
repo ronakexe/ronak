@@ -23,4 +23,31 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  filter: drop-shadow(0 0 5rem black);
+}
+
+img {
+  width: 200px;
+}
+
+#contacts {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33, 33, 33%;
+}
+
+.contact {
+  padding: 1px;
+  background: rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, .3);
+  border-radius: 15px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  width: 20px;
+  padding-right: 10px;;
 }
