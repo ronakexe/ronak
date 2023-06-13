@@ -6,47 +6,79 @@
   <meta name="viewport" content="width=device-width">
   <title>Ronak</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="ronakexe.png">
+  <meta content="Ronak Ramnani" property="og:title" />
+  <meta content="Hi bud! I develop websites, films, and ui/ux layouts. you can find my contacts here! I'll add some of my projects too later! 👍🏽" property="og:description" />
+  <meta content="https://website.bobacup.repl.co/titleimage.png" property="og:image"/>
 </head>
 
 <body>
-<div class="glass">
-  <h1>Ronak Ramnani</h1>
-  <div id="contacts">
-    <a href="mailto:“itstheronak@gmail.com”" target="_blank">
-      <div class="contact">
-      <i class="fa-regular fa-xl fa-envelope icons" style="color: #ffffff;"></i>
-      <p>Email</p>
+  <div class="glass">
+    <h1>Ronak Ramnani</h1>
+    <div id="contacts">
+      <a href="mailto:“itstheronak@gmail.com”" target="_blank">
+        <div class="contact">
+          <i class="fa-regular fa-xl fa-envelope icons" style="color: #ffffff;"></i>
+          <p>Email</p>
+        </div>
+      </a>
+      <div class="contact" id="btn">
+        <i class="fa-brands fa-xl fa-discord icons" style="color: #ffffff;"></i>
+        <p>Discord</p>
+      </div>
+      <a href="https://github.com/ronakexe" target="_blank">
+        <div class="contact">
+          <i class="fa-brands fa-xl fa-github icons" style="color: #ffffff;"></i>
+          <p>Github</p>
+        </div>
+      </a>
+      <a href="https://replit.com/@ronakexe" target="_blank">
+        <div class="contact">
+          <img id="replit" class="icons" src="replit.png" alt="replit icon">
+          <p>Replit</p>
+        </div>
+      </a>
+      <a href="https://twitter.com/ronakexe" target="_blank">
+        <div class="contact">
+          <i class="fa-brands fa-xl fa-twitter icons" style="color: #ffffff;"></i>
+          <p>Twitter</p>
+        </div>
+      </a>
+      <a href="https://unsplash.com/@ronakexe">
+        <div class="contact">
+          <i class="fa-brands fa-xl fa-unsplash icons" style="color: #ffffff;"></i>
+          <p>Unsplash</p>
+        </div>
+      </a>
     </div>
-    </a>
-    
-    <div class="contact">
-      <i class="fa-brands fa-xl fa-discord icons" style="color: #ffffff;"></i>
-      <p>Discord</p>
-    </div>
-    <a href="https://github.com/ronakexe" target="_blank">
-      <div class="contact">
-      <i class="fa-brands fa-xl fa-github icons" style="color: #ffffff;"></i>
-      <p>Github</p>
-    </div>
-    </a>
-    <a href="https://replit.com/@ronakexe">
-      <div class="contact">
-      <img id="replit" class="icons" src="replit.png" alt="replit icon">
-      <p>Replit</p>
-    </div>
-    </a>
-    
-    <div class="contact">
-       <i class="fa-brands fa-xl fa-twitter icons" style="color: #ffffff;"></i>
-      <p>Twitter</p>
-    </div>
-    <div class="contact">
-      <i class="fa-brands fa-xl fa-unsplash icons" style="color: #ffffff;"></i>
-      <p>Unsplash</p>
-    </div>
-  </div>
-  <img src="me.png" alt="A photo of me">
+
+    <img src="me.png" alt="A photo of me">
 </body>
+<script>
+  const copy = (text) => navigator.clipboard.writeText(text);
+    const copyToClipboard = (text) => {
+    const tempInput = document.createElement('textarea');
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+  };
+
+  let button = document.getElementById("btn");
+  button.addEventListener("click", () => {
+    copyToClipboard('ronakexe#3335');
+    alert("Copied 'ronakexe#3335' to your clipboard");
+  });
+
+  // let button = document.getElementById("btn");
+  // button.addEventListener("click", () => {
+  //   copy('ronakexe#3335');
+  //   alert("Copied 'ronakexe#3335' to your clipboard");
+  // });
+</script>
+
 </html>

@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 
+
 html {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: url(cursor.png), pointer;
-  background: url("ohmygod.png");
-  background-size: 100vmax;
+  cursor: url(cursor.png), default;
+  background: url("anotherone.png");
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
   font-family: "Inter";
   color: white;
 }
@@ -38,6 +41,11 @@ img {
   grid-template-rows: 33%, 33%, 33%;
   column-gap: 7px;
   row-gap: 10px;
+  cursor: url("click.png"), pointer;
+}
+
+button {
+  font-family: "Inter";
 }
 
 .contact {
@@ -51,7 +59,8 @@ img {
   justify-content: center;
   text-decoration: none;
   color: white;
-}
+  cursor: url("click.png"), pointer;
+  }
 
 .icons {
   width: 20px;
@@ -71,15 +80,22 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 400px) {
+h1 {
+    cursor: url("text.png"), text;
+  }
+
+
+@media (max-width: 500px) {
   html {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("ohmygod.png");
-  background-size: 200vmax;
+  background: url("anotherone.png");
+  background-position: center;
+  background-size: 300%;
+  background-repeat: no-repeat;
   font-family: "Inter";
   color: white;
 }
@@ -105,6 +121,7 @@ a {
   row-gap: 5px;
   }
 
+  
 .contact {
   padding: 1px;
   background: rgba(255, 255, 255, .2);
