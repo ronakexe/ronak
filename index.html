@@ -11,14 +11,27 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="ronakexe.png">
   <meta content="Ronak Ramnani" property="og:title" />
-  <meta content="Hey! I develop websites, films, and ui/ux layouts. you can find my contacts here! I'll add some of my projects too later! 👍🏽" property="og:description" />
+  <meta
+    content="Hey! I develop websites, films, and ui/ux layouts. you can find my contacts here! I'll add some of my projects too later! 👍🏽"
+    property="og:description" />
 </head>
 
 <body>
   <div class="glass">
-    <h1>Ronak Ramnani</h1>
+    <div id="parentText">
+      <h1 id="childONE">Ronak Ramnani</h1>
+      <div id="childTWO">
+        <p>Hey! I develop...</p>
+        <ul>
+          <li>Websites</li>
+          <li>Films</li>
+          <li>UI/UX layouts</li>
+        </ul>
+        <p>You can find my contacts here, I'll also be adding some projects I've created here soon!</p>
+      </div>
+    </div>
     <div id="contacts">
-      <a href="mailto:“itstheronak@gmail.com”" target="_blank">
+      <a href="mailto:itstheronak@gmail.com" target=" _blank">
         <div class="contact">
           <i class="fa-regular fa-xl fa-envelope icons" style="color: #ffffff;"></i>
           <p>Email</p>
@@ -46,19 +59,23 @@
           <p>Twitter</p>
         </div>
       </a>
-      <a href="https://unsplash.com/@ronakexe">
+      <a href="projects.html">
         <div class="contact">
-          <i class="fa-brands fa-xl fa-unsplash icons" style="color: #ffffff;"></i>
-          <p>Unsplash</p>
+          <p>Projects</p>
+          <i class="fa-regular fa-xl fa-angle-right" style="color: #ffffff;"></i>
         </div>
       </a>
     </div>
 
-    <img id="itsme" src="me.png" alt="A photo of me">
+    <div id="wrapme">
+      <img id="itsme" src="me.png" alt="A photo of me">
+    </div>
+
 </body>
+
 <script>
   const copy = (text) => navigator.clipboard.writeText(text);
-    const copyToClipboard = (text) => {
+  const copyToClipboard = (text) => {
     const tempInput = document.createElement('textarea');
     tempInput.value = text;
     document.body.appendChild(tempInput);
