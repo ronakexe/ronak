@@ -17,6 +17,7 @@ html {
   color: white;
 }
 
+
 .glass {
   background-color: rgba(255, 255, 255, .3);
   border: 2px solid rgba(255, 255, 255, .2);
@@ -92,8 +93,12 @@ button {
 
 .icons {
   width: 20px;
-  padding-right: 20px;
+  margin-right: 20px;
+}
 
+.nexticons {
+  width: 30px;
+  margin-left: 10px;
 }
 
 .link {
@@ -172,7 +177,6 @@ a {
   #itsme {
     width: 200px;
     cursor: none;
-    transition: .42s;
   }
 
 }
