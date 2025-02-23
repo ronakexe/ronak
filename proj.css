@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url(/Cursors/cursor.png), default;
+  background: url("backbackgroundground.png");
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  font-family: "Inter";
+  color: white;
+}
+
+.glass {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.baseGlass {
+  background-color: rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 5rem black);
+  transition: .42s;
+}
+
+.baseGlass p {
+  font-size: 1.5rem;
+  transition: .24s;
+}
+
+.baseGlass:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, .2);
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 5rem black);
+}
+
+.baseGlass:hover .projicons {
+  width: 80px;
+}
+
+.baseGlass:hover p {
+  font-size: 0rem;
+}
+
+.projicons {
+  width: 120px;
+  transition: .42s;
+}
+
